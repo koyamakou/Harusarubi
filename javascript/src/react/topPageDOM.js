@@ -35,7 +35,7 @@ export function aboutAreaDOM() {
         <p>
           10代、20代の若者が抱える想い、エモーションを歌とラップに込める、バーチャルラップシンガー。<br />
           時に台風のように力強く、時にあどけない少女のように、パワフルで変幻自在な歌唱力で聴き手の心を引き込む19歳。<br />
-          2022年11月15日に3周年を迎える。
+          2022年11月15日に参周年を迎える。
         </p>
         <ul className = "sns-list">
           <li>
@@ -64,7 +64,7 @@ export function movieAreaDOM() {
     <div className = "movie">
       <h1>MOVIE</h1>
       <div className = "3rd">
-        <h2>参周年感謝編</h2>
+        <h2>参周年記念生配信</h2>
         <div id = "modal_3rd" className = "movie_3rd">
             <img src="./img/lp/3rd/3rd.jpg" alt="参周年感謝編" />
             <div className = "ico_play">
@@ -161,22 +161,18 @@ export function storeAreaDOM() {
         <div className = "store-detail-list">
           <div className = "store-syamanizumu">
             <div className = "syamanizumu-img">
-              <a href = "https://findmestore.thinkr.jp/collections/harusaruhi/products/harusaruhi220403" target = "_blank"><img src="./img/lp/store/syamanizumu.jpg" alt="春猿火-アルバム" /></a>
+              <a href = "https://findmestore.thinkr.jp/collections/harusaruhi/products/harusaruhi_cd_creampuff2" target = "_blank"><img src="./img/lp/store/creampuffLive2.jpg" alt="春猿火-アルバム" /></a>
             </div>
             <div className = "syamanizumu-explanation">
-              <h2>1st LIVE Blu-ray「シャーマニズム」</h2>
+              <h2>CREAM PUFF LIVE 2</h2>
               <p>
-                2021年8月27日に開催された春猿火の1st ONE-MAN LIVEがBlu-rayで映像化。<br />
-                新鋭のラップアーティストさなり、KMNZらの客演も含む19曲の歌唱に加え、<br />
-                デビューまでの裏話や心の奥に秘めた思いを語ったMC等も完全収録。<br />
-                ライブ全編を収録したBlu-rayの他、LIVE音源を収録したCD2枚を同梱した3枚組。<br />
-                ライブの為に13名のイラストレーターが描き下ろした公式ファンアートをアートブックも付属。<br /><br />
-
-                [内容]<br />
-                Blu-ray、CD2枚組（全22曲）、アートブック（32ページ）<br /><br />
+                2022年8月6日にYouTube Liveにて開催された、<br />
+                春猿火のストリーミングカバーライブ「シュークリームライブ 2」（CREAM PUFF LIVE 2）の音源CD。<br />
+                春猿火によるセレクト楽曲を中心にカバー披露した全20曲を収録。<br />
+                MCも収録した、CD2枚組のアルバム。<br /><br />
 
                 [収録曲]<br />
-                22曲
+                22曲（CD2枚組）
               </p>
             </div>
           </div>
@@ -216,13 +212,24 @@ export function storeAreaDOM() {
 
 export function otherAreaDOM() {
   return(
-    <div className = "other_harusaruhi">
-      <div className = "harusaruhi-list">
-        <div className = "harusaruhi-char">
-          <img src="./img/lp/other/harusaruhi.png" alt="春猿火" />
-        </div>
-        <div className = "harusaruhi-log">
-          <img src="./img/lp/other/log.png" alt="春猿火-ロゴ" />
+    <div class = "other_harusaruhi">
+      <h1>音楽的同位体</h1>
+      <div class = "outher_haru">
+        <div class = "haru-list">
+          <div class = "haru-char">
+            <img src = "./img/lp/other/haru.png" alt = "羽累" />
+          </div>
+          <div class = "haru-detail">
+            <div id = "haruMovie" class = "haru-detail-movie">
+              <img src = "./img/lp/other/haru_rogo.png" alt = "羽累-トレーラー" />
+            </div>
+            <div class = "haru-detail-explanation">
+              <p>
+                音楽的同位体 羽累(HARU)は、バーチャルラップシンガー春猿火の音楽的同位体として生まれた人工歌唱ソフトウェア<br />
+                <a href = "https://haru.kamitsubaki.jp/" target = "_blank">公式サイト：https://haru.kamitsubaki.jp/</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

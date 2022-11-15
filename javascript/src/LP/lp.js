@@ -11,17 +11,30 @@ export let modalWindowClick = (function() {
 
   return {
     // modalWindowを開く
+    // 3周年記念動画か羽累トレーラー動画を表示する。
     open : function () {
-      let triggerId = document.getElementById('modal_3rd');
-      triggerId.addEventListener('click', () => {
+      // 参周年記念生配信の場合
+      let triggerId_3rd = document.getElementById('modal_3rd');
+      triggerId_3rd.addEventListener('click', () => {
         let targeCustom = targetId.getAttribute('data-state');
         //カスタムデータの検証
         if (targeCustom === 'modeless' || targeCustom === '') {
-          movieId.setAttribute('src', 'https://www.youtube.com/embed/zcYMIsHZc7Q');
+          movieId.setAttribute('src', 'https://www.youtube.com/embed/WLxMK6xKvpA');
           targetId.setAttribute('data-state', 'modal');
           return ;
         }
       })
+      // 羽累トレーラー動画
+      let triggerId_haru = document.getElementById('haruMovie');
+      triggerId_haru.addEventListener('click', () => {
+        let targeCustom = targetId.getAttribute('data-state');
+        //カスタムデータの検証
+        if (targeCustom === 'modeless' || targeCustom === '') {
+          movieId.setAttribute('src', 'https://www.youtube.com/embed/5BLicZktcns');
+          targetId.setAttribute('data-state', 'modal');
+          return ;
+        }
+      });
     },
     // modalWindowを閉じる
     close : function() {

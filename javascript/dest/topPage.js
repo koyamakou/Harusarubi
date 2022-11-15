@@ -21,13 +21,26 @@ var modalWindowClick = function () {
   var movieId = document.getElementById('modalWindowMovie').children[0];
   return {
     // modalWindowを開く
+    // 3周年記念動画か羽累トレーラー動画を表示する。
     open: function open() {
-      var triggerId = document.getElementById('modal_3rd');
-      triggerId.addEventListener('click', function () {
+      // 参周年記念生配信の場合
+      var triggerId_3rd = document.getElementById('modal_3rd');
+      triggerId_3rd.addEventListener('click', function () {
         var targeCustom = targetId.getAttribute('data-state'); //カスタムデータの検証
 
         if (targeCustom === 'modeless' || targeCustom === '') {
-          movieId.setAttribute('src', 'https://www.youtube.com/embed/zcYMIsHZc7Q');
+          movieId.setAttribute('src', 'https://www.youtube.com/embed/WLxMK6xKvpA');
+          targetId.setAttribute('data-state', 'modal');
+          return;
+        }
+      }); // 羽累トレーラー動画
+
+      var triggerId_haru = document.getElementById('haruMovie');
+      triggerId_haru.addEventListener('click', function () {
+        var targeCustom = targetId.getAttribute('data-state'); //カスタムデータの検証
+
+        if (targeCustom === 'modeless' || targeCustom === '') {
+          movieId.setAttribute('src', 'https://www.youtube.com/embed/5BLicZktcns');
           targetId.setAttribute('data-state', 'modal');
           return;
         }
@@ -798,14 +811,13 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
   lp.sliderClick.drag();
   lp.sliderClick.swipe();
   lp.sliderClick.squareClick();
-  lp.sliderClick.eventNotDrag(); // 0.7
-
+  lp.sliderClick.eventNotDrag();
   new scroll.Scroll('.about_char', 'scroll-js-img', 0.7);
-  new scroll.Scroll('.about_profile', 'scroll-js-inner', 0.7); // 0.76
-
+  new scroll.Scroll('.about_profile', 'scroll-js-inner', 0.7);
   new scroll.Scroll('.movie_area', 'scroll-js-movie', 0.76);
   new scroll.Scroll('.store-syamanizumu', 'scroll-js-syamanizumu', 0.7);
   new scroll.Scroll('.store-singan', 'scroll-js-singan', 0.7);
+  new scroll.Scroll('.outher_haru', 'scroll-js-haru', 0.7);
   new sidrbar.Sidrbar('#sidebarList');
 })();
 

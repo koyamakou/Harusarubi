@@ -101,8 +101,8 @@ export class opAnimation {
       './img/lp/store/syamanizumu.jpg',
       './img/lp/store/singan.jpg',
 
-      './img/lp/other/harusaruhi.png',
-      './img/lp/other/log.png',
+      './img/lp/other/haru.png',
+      './img/lp/other/haru_rogo.png',
       './img/lp/footer_log.svg'
     ]
     for (let i = 0; i < imgList.length; i++) {
